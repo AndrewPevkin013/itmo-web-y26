@@ -2,144 +2,204 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="шоперы, значки, блонкоты, покупки">
     <meta name="description" content="Интернет-магазин шопперов и атрибутики с тематикой Дальнего Востока.">
-    <title>Mia-shop</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Душа Приморья</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
 
-<header>
-    <div class="header_container">
-        <div class="logo">
-            <img src="data\img\logo\logo_web.PNG" width="100" height="100" alt="Logo">
-        </div>
-        <div class="site_name">
-            <h1>Mia-shop</h1>
-        </div>
-        <div class="catalog">
-            <button>Каталог</button>
-        </div>
-        <div class="search_bar">
-            <label>
-                <input type="text" placeholder="Поиск" style="width: 80%; height: 30px;">
-            </label>
-        </div>
-        <aside>
-            <nav class="menu_buttons">
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header-row">
+            <div class="header-logo">
+                <img src="data\img\logo\logo_web.PNG" width="100" height="100" alt="Logo">
+                <div class="header_name">
+                    <h1>Душа Приморья</h1>
+                </div>
+            </div>
+
+            <nav class="header-nav">
                 <ul>
-                    <li><a href="#">Заказы</a></li>
+                    <li><a href="#">Поиск</a></li>
+                    <li><a href="#">Каталог</a></li>
                     <li><a href="#">Корзина</a></li>
-                    <li><a href="#">Аккаунт</a></li>
                 </ul>
             </nav>
-        </aside>
+
+            <div class="header-login">
+                <a href="#" class="btn">Войти</a>
+            </div>
+        </div>
+
     </div>
 </header>
-<main>
-    <div class="main_container">
-        <div class="news">
-            Новинки и акции
-            <img src="data\img\shoppers\Шопер океан.jpg" width="100" height="100" alt="product">
-        </div>
-        <div class="new_items_and_promotions1">
-            Новинки и акции (правый верхний блок)
-            <img src="data\img\calendar\Календарь.jpg" width="100" height="100" alt="product">
-        </div>
-        <div class="new_items_and_promotions2">
-            Новинки и акции (правый нижний блок)
-            <img src="data\img\badges\Значок тигр.jpg" width="100" height="100" alt="product">
-        </div>
-        <div class="products">
-            <div class="shoppers">
-                <a href="#">
-                    <div class="product">
-                        <img src="data\img\shoppers\Шопер с тигром.jpg" width="100" height="100" alt="product">
-                        <div class="text">Шопер океан</div>
-                        <div class="price">1200 руб.</div>
-                        <button class="add_to_cart"> Добавить в корзину</button>
-                    </div>
-                    <div class="product">
-                        <img src="data\img\shoppers\Шопер с мостом.jpg" width="100" height="100" alt="product">
-                        <div class="text">Шопер мост</div>
-                        <div class="price">1200 руб.</div>
-                        <button class="add_to_cart"> Добавить в корзину</button>
-                    </div>
-                </a>
-            </div>
-            <div class="badges"><a href="#">
 
-                <div class="product">
-                    <img src="data\img\badges\Значок тигр.jpg" width="100" height="100" alt="product">
-                    <div class="text">Шопер океан</div>
-                    <div class="price">600 руб.</div>
-                    <button class="add_to_cart"> Добавить в корзину</button>
-                </div>
-                <div class="product">
-                    <img src="data\img\badges\Значок корабль.jpg" width="100" height="100" alt="product">
-                    <div class="text">Шопер мост</div>
-                    <div class="price">600 руб.</div>
-                    <button class="add_to_cart"> Добавить в корзину</button>
-                </div>
-            </a></div>
-            <div class="calendar"><a href="#">
-                <div class="product">
-                    <img src="data\img\calendar\Календарь.jpg" width="100" height="100" alt="product">
-                    <div class="text">Шопер океан</div>
-                    <div class="price">1500 руб.</div>
-                    <button class="add_to_cart"> Добавить в корзину</button>
-                </div>
-            </a></div>
+
+<main class="main">
+    <section class="main-promo">
+        <div class="promo-container">
+            <button class="btn-left">
+                <img src="data/img/arrow-left.png" width="10" height="10" alt="left">
+            </button>
+            <ul class="promo-row-cards">
+                <li class="product-wrapper">
+                    <div class="img-section">
+                        <img src="data/img/shoppers/Шопер с мостом.jpg" alt="item 2">
+                    </div>
+                    <div class="promo-name">
+                        <h2>Новинка!</h2>
+                    </div>
+                    <div class="description-section">
+
+                        <h3 class="promo-heading">Шопер Мост</h3>
+                        <div class="promo-description">
+                            <p>#Мост#VL#Love</p>
+                        </div>
+                    </div>
+                    <div class="btn-add-promo-item">
+                        <a href="#" class="btn">В корзину</a>
+                    </div>
+                </li>
+
+                <li class="product-wrapper">
+                    <div class="img-section">
+                        <img src="data\img\shoppers\Шопер океан.jpg" alt="item 1">
+                    </div>
+                    <div class="promo-name">
+                        <h2>Новинка!</h2>
+                    </div>
+                    <div class="description-section">
+                        <h3 class="promo-heading">Шопер Океан</h3>
+                        <div class="promo-description">
+                            <p>Частичка моря всегда с собой!</p>
+                        </div>
+                        <div class="btn-add-promo-item">
+                            <a href="#" class="btn">В корзину</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="product-wrapper">
+                    <div class="img-section">
+                        <img src="data/img/shoppers/Шопер с тигром.jpg" alt="item 3">
+                    </div>
+                    <div class="promo-name">
+                        <h2>Новинка!</h2>
+                    </div>
+                    <div class="description-section">
+                        <h3 class="promo-heading">Шопер Тигр</h3>
+                        <div class="promo-description">
+                            <p>两只老虎</p>
+                        </div>
+                        <div class="btn-add-promo-item">
+                            <a href="#" class="btn">В корзину</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="btn-right">
+                <img src="data/img/arrow-right.png" width="10" height="10" alt="right">
+            </button>
         </div>
-    </div>
+    </section>
+
+
+    <section class="main-catalog">
+        <h3 class="inscription">Для вас</h3>
+        <ul class="list-of-items">
+            <li class="product-wrapper">
+                <div class="img-product">
+                    <img src="data\img\shoppers\Шопер с тигром.jpg" alt="product">
+                </div>
+                <div class="text">Шопер Тигр</div>
+                <div class="price">1200 руб.</div>
+                <div class="btn-add-promo-item">
+                    <a href="#" class="btn">В корзину</a>
+                </div>
+            </li>
+            <li class="product-wrapper">
+                <div class="img-product">
+                    <img src="data\img\shoppers\Шопер с мостом.jpg" alt="product">
+                </div>
+                <div class="text">Шопер Мост</div>
+                <div class="price">1200 руб.</div>
+                <div class="btn-add-promo-item">
+                    <a href="#" class="btn">В корзину</a>
+                </div>
+            </li>
+            <li class="product-wrapper">
+                <div class="img-product">
+                    <img src="data\img\badges\Значок тигр.jpg" alt="product">
+                </div>
+                <div class="text">Значок Тигр</div>
+                <div class="price">600 руб.</div>
+                <div class="btn-add-promo-item">
+                    <a href="#" class="btn">В корзину</a>
+                </div>
+            </li>
+            <li class="product-wrapper">
+                <div class="img-product">
+                    <img src="data/img/badges/Значок чайка.jpg" alt="product">
+                </div>
+                <div class="text">Значок Чайка</div>
+                <div class="price">600 руб.</div>
+                <div class="btn-add-promo-item">
+                    <a href="#" class="btn">В корзину</a>
+                </div>
+            </li>
+            <li class="product-wrapper">
+                <div class="img-product">
+                    <img src="data\img\badges\Значок корабль.jpg" alt="product">
+                </div>
+                <div class="text">Значок Корабль</div>
+                <div class="price">600 руб.</div>
+                <div class="btn-add-promo-item">
+                    <a href="#" class="btn">В корзину</a>
+                </div>
+            </li>
+            <li class="product-wrapper">
+                <div class="img-product">
+                    <img src="data/img/shoppers/Шопер чб мост.jpg" alt="product">
+                </div>
+                <div class="text">Шопер Мост чб</div>
+                <div class="price">1200 руб.</div>
+                <div class="btn-add-promo-item">
+                    <a href="#" class="btn">В корзину</a>
+                </div>
+            </li>
+            <li class="product-wrapper">
+                <div class="img-product">
+                    <img src="data\img\calendar\Календарь.jpg" alt="product">
+                </div>
+                <div class="text">Календарь</div>
+                <div class="price">1500 руб.</div>
+                <div class="btn-add-promo-item">
+                    <a href="#" class="btn">В корзину</a>
+                </div>
+            </li>
+        </ul>
+    </section>
 </main>
 
-<footer>
-    <div class="footer_container">
-        <div class="info_about">
-            <strong><a href="#">О нас</a></strong>
-            <blockquote>
-                <p><q>Владивосток очень похож на Сан-Франциско. Такой же бешеный ритм, можно сойти с ума.</q></p>
-                <cite>Людмила Гурченко, из интервью, 28 апреля 2005 года</cite>
-            </blockquote>
-        </div>
+
+<footer class="footer">
+    <div class="footer-container">
         <div class="contacts">
-            <strong>Контакты:</strong>
             <ul>
+                <li><strong>Контакты:</strong></li>
                 <li>8-888-888-88-88</li>
                 <li>mail@mail.ru</li>
             </ul>
         </div>
-        <div class="social_media">
-            <strong>Мы в соцсетях</strong>
+        <div class="social-media">
             <ul>
+                <li><strong>Мы в соцсетях</strong></li>
                 <li><a href="#">Телеграм</a></li>
                 <li><a href="#">ВКонтакте</a></li>
             </ul>
         </div>
-        <section id="cute_ascii_picture">
-            <pre>
-                (\ /)
-                (>.<)
-               <(   )>
-            *************
-            </pre>
-        </section>
-        <section id="success">
-            <p><b>Формула успеха</b></p>
-            <h2>E = m*c<sup>2</sup></h2>
-            <br>
-            <h3>E = milk*coffee<sup>2</sup></h3>
-        </section>
-        <section id="code">
-            <pre>
-                <code>
-                for (int i = 0; i < 100; i++) {
-                    std::cout << "Hello world!" << std::endl;
-                }
-                </code>
-            </pre>
-        </section>
     </div>
 </footer>
 </body>
