@@ -3,6 +3,9 @@ body {
     font-size: 20px;
     font-weight: 400;
     color: #F1EAE4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -25,7 +28,7 @@ a:focus, a:active {
 /* Header */
 
 .container {
-    max-width: 1400px;
+    width: 93%;
     padding-left: 10px;
     padding-right: 10px;
     margin-right: auto;
@@ -67,6 +70,9 @@ a:focus, a:active {
 }
 
 .header-nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
     list-style: none;
     display: flex;
 }
@@ -76,7 +82,7 @@ a:focus, a:active {
 }
 
 .header-nav a {
-    transition: colot 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 .header-nav a:hover {
@@ -84,7 +90,7 @@ a:focus, a:active {
 }
 
 .header-login a {
-    transition: colot 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 .header-login {
@@ -96,6 +102,16 @@ a:focus, a:active {
     color: #5D479A;
 }
 
+@media only screen and (max-width: 768px) {
+    .header-nav {
+        display: none;
+    }
+
+    .header-login {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
 
 /* Main */
 
@@ -125,6 +141,13 @@ a:focus, a:active {
     margin-top: 70px;
 }
 
+@media only screen and (max-width: 768px) {
+    .promo-row-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .product-wrapper {
     display: block;
     max-width: 100%;
@@ -151,11 +174,12 @@ a:focus, a:active {
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1024px) {
     .product-wrapper {
         width: 25%;
     }
 }
+
 
 img.img-section {
     height: auto;
@@ -210,7 +234,7 @@ img.img-section {
 }
 
 .btn-add-promo-item a {
-    transition: colot 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 .btn-add-promo-item {
@@ -333,7 +357,7 @@ img.product-image {
 .footer-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin-top: 15px;
     margin-left: 25px;
     margin-right: 25px;
@@ -344,7 +368,7 @@ img.product-image {
 }
 
 .social-media a {
-    transition: colot 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 .social-media a:hover {
