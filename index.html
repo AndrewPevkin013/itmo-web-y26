@@ -7,8 +7,8 @@
     <meta name="description" content="Интернет-магазин шопперов и атрибутики с тематикой Дальнего Востока.">
     <title>Душа Приморья</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/3d0e27e432.js"></script>
 </head>
-
 <body>
 <header class="header">
     <div class="container">
@@ -19,89 +19,95 @@
                     <h1>Душа Приморья</h1>
                 </div>
             </div>
-
+            <div class="search-box">
+                <input type="text" placeholder="Введите для поиска ...">
+                <div class="search-btn">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
             <nav class="header-nav">
                 <ul>
-                    <li><a href="#">Поиск</a></li>
                     <li><a href="#">Каталог</a></li>
-                    <li><a href="#">Корзина</a></li>
+                    <li><a href="shopping_cart.html">Корзина</a></li>
                 </ul>
             </nav>
-
             <div class="header-login">
                 <a href="#" class="btn">Войти</a>
             </div>
         </div>
-
     </div>
 </header>
-
 
 <main class="main">
     <section class="main-promo">
         <div class="promo-container">
-            <button class="btn-left">
-                <img src="data/img/arrow-left.png" width="10" height="10" alt="left">
-            </button>
-            <ul class="promo-row-cards">
-                <li class="product-wrapper">
-                    <div class="img-section">
-                        <img src="data/img/shoppers/Шопер с мостом.jpg" alt="item 2">
-                    </div>
-                    <div class="promo-name">
-                        <h2>Новинка!</h2>
-                    </div>
-                    <div class="description-section">
-
-                        <h3 class="promo-heading">Шопер Мост</h3>
-                        <div class="promo-description">
-                            <p>#Мост#VL#Love</p>
+<!--            <button class="btn-left" id="btn-left">-->
+<!--                <img src="data/img/arrow-left.png" width="10" height="10" alt="left">-->
+<!--            </button>-->
+            <div class="slider-wrapper">
+                <ul class="promo-row-cards" id="slider">
+                    <li class="product-wrapper">
+                        <div class="img-section">
+                            <img src="data/img/shoppers/Шопер с мостом.jpg" alt="item 2">
                         </div>
-                    </div>
-                    <div class="btn-add-promo-item">
-                        <a href="#" class="btn">В корзину</a>
-                    </div>
-                </li>
+                        <div class="promo-name">
+                            <h2>Новинка!</h2>
+                        </div>
+                        <div class="description-section">
 
-                <li class="product-wrapper">
-                    <div class="img-section">
-                        <img src="data\img\shoppers\Шопер океан.jpg" alt="item 1">
-                    </div>
-                    <div class="promo-name">
-                        <h2>Новинка!</h2>
-                    </div>
-                    <div class="description-section">
-                        <h3 class="promo-heading">Шопер Океан</h3>
-                        <div class="promo-description">
-                            <p>Частичка моря всегда с собой!</p>
+                            <h3 class="promo-heading">Шопер Мост</h3>
+                            <div class="promo-description">
+                                <p>#Мост#VL#Love</p>
+                            </div>
                         </div>
                         <div class="btn-add-promo-item">
                             <a href="#" class="btn">В корзину</a>
                         </div>
-                    </div>
-                </li>
+                    </li>
 
-                <li class="product-wrapper">
-                    <div class="img-section">
-                        <img src="data/img/shoppers/Шопер с тигром.jpg" alt="item 3">
-                    </div>
-                    <div class="promo-name">
-                        <h2>Новинка!</h2>
-                    </div>
-                    <div class="description-section">
-                        <h3 class="promo-heading">Шопер Тигр</h3>
-                        <div class="promo-description">
-                            <p>两只老虎</p>
+                    <li class="product-wrapper">
+                        <div class="img-section">
+                            <img src="data\img\shoppers\Шопер океан.jpg" alt="item 1">
                         </div>
-                        <div class="btn-add-promo-item">
-                            <a href="#" class="btn">В корзину</a>
+                        <div class="promo-name">
+                            <h2>Новинка!</h2>
                         </div>
-                    </div>
-                </li>
-            </ul>
-            <button class="btn-right">
-                <img src="data/img/arrow-right.png" width="10" height="10" alt="right">
-            </button>
+                        <div class="description-section">
+                            <h3 class="promo-heading">Шопер Океан</h3>
+                            <div class="promo-description">
+                                <p>Частичка моря всегда с собой!</p>
+                            </div>
+                            <div class="btn-add-promo-item">
+                                <a href="#" class="btn">В корзину</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="product-wrapper">
+                        <div class="img-section">
+                            <img src="data/img/shoppers/Шопер с тигром.jpg" alt="item 3">
+                        </div>
+                        <div class="promo-name">
+                            <h2>Новинка!</h2>
+                        </div>
+                        <div class="description-section">
+                            <h3 class="promo-heading">Шопер Тигр</h3>
+                            <div class="promo-description">
+                                <p>两只老虎</p>
+                            </div>
+                            <div class="btn-add-promo-item">
+                                <a href="#" class="btn">В корзину</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+<!--            <button class="btn-right" id="btn-right">-->
+<!--                <img src="data/img/arrow-right.png" width="10" height="10" alt="right">-->
+<!--            </button>-->
         </div>
     </section>
 
@@ -183,7 +189,6 @@
     </section>
 </main>
 
-
 <footer class="footer">
     <div class="footer-container">
         <div class="contacts">
@@ -202,5 +207,6 @@
         </div>
     </div>
 </footer>
+<script src="Scripts/script.js"></script>
 </body>
 </html>
