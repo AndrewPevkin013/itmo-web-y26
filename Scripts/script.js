@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
         plusBtn.addEventListener('click', () => {
             const currentValue = parseInt(numericInput.value, 10) || 1;
             numericInput.value = currentValue + 1;
-            updatePrice(); // Обновляем стоимость
+            updatePrice();
         });
 
         minusBtn.addEventListener('click', () => {
