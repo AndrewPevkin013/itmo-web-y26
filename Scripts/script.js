@@ -111,3 +111,83 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
+// Preloader
+document.addEventListener("DOMContentLoaded", () => {
+    const preloader = document.getElementById("preloader");
+    const dataContainer = document.getElementById("data-container");
+
+    async function fetchData(randomFilter) {
+        preloader.style.display = "block";
+        dataContainer.innerHTML = "";
+
+        const url = randomFilter
+            ? "https://jsonplaceholder.typicode.com/comments?id_gte=100"
+            : "https://jsonplaceholder.typicode.com/comments?id_lte=200";
+
+        try {
+            const response = await fetch(url);
+
+            if (!response.ok) {
+                throw new Error("Ошибка загрузки данных");
+            }
+
+            const data = await response.json();
+
+            preloader.style.display = "none";
+
+            data.forEach((comment) => {
+                const item = document.createElement("div");
+                item.innerHTML = `
+                    <h3>${comment.name}</h3>
+                    <p>${comment.body}</p>
+                    <span>Email: ${comment.email}</span>
+                `;
+                dataContainer.appendChild(item);
+            });
+        } catch (error) {
+            preloader.style.display = "none";
+            dataContainer.innerHTML = `<div style="color: red;">⚠ Что-то пошло не так: ${error.message}</div>`;
+        }
+    }
+
+    let randomFilter = Math.random() > 0.5;
+    fetchData(randomFilter);
+
+    // const reloadButton = document.createElement("button");
+    // reloadButton.textContent = "Обновить данные";
+    // reloadButton.addEventListener("click", () => {
+    //     randomFilter = !randomFilter;
+    //     fetchData(randomFilter);
+    // });
+    // dataContainer.appendChild(reloadButton);
+});
+
+
+// Login form =)
+document.getElementById("login-btn").addEventListener("click", () => {
+    Swal.fire({
+        title: 'Login Form',
+        html: `
+            <input id="username" class="swal2-input" placeholder="Username">
+            <input id="password" class="swal2-input" type="password" placeholder="Password">
+        `,
+        confirmButtonText: 'Sign in',
+        showCancelButton: true,
+        cancelButtonText: 'Cancel',
+        focusConfirm: false,
+        customClass: {
+            popup: 'animated-popup',
+        },
+        preConfirm: () => {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (!username || !password) {
+                Swal.showValidationMessage('Both fields must be filled in!');
+            }
+            return { username, password };
+        }
+    })
+});
+
